@@ -17,19 +17,36 @@ namespace tapete
 	/// </summary>
 	public partial class Precio : Form
 	{
-		public Precio(string area, string pre)
+		//Obtener datos de otro form
+		public Precio(string area, string mat, string obra)
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
+			//Guardar los datos
 			string a = area;
 			label6.Text=a;
-			lbl_pre.Text=pre;
+			lbl_mat.Text=mat;
+			label7.Text=obra;
 			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+		}
+		
+		void Button2Click(object sender, EventArgs e)
+		{
+			//Hacer el calculo final
+			int a = Int32.Parse(lbl_mat.Text);	
+			int a2 = Int32.Parse(label7.Text);	
+			label9.Text=a+a2.ToString();
+		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			//Volver
+			this.Close();
 		}
 	}
 }

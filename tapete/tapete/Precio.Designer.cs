@@ -43,16 +43,14 @@ namespace tapete
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
+			this.lbl_mat = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
 			this.label11 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
 			this.button2 = new System.Windows.Forms.Button();
-			this.label14 = new System.Windows.Forms.Label();
-			this.lbl_pre = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -115,14 +113,14 @@ namespace tapete
 			this.label7.Text = "________________";
 			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// label8
+			// lbl_mat
 			// 
-			this.label8.Location = new System.Drawing.Point(159, 88);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(100, 23);
-			this.label8.TabIndex = 7;
-			this.label8.Text = "________________";
-			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lbl_mat.Location = new System.Drawing.Point(159, 88);
+			this.lbl_mat.Name = "lbl_mat";
+			this.lbl_mat.Size = new System.Drawing.Size(100, 23);
+			this.lbl_mat.TabIndex = 7;
+			this.lbl_mat.Text = "________________";
+			this.lbl_mat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// label9
 			// 
@@ -133,14 +131,6 @@ namespace tapete
 			this.label9.Text = "________________";
 			this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// label10
-			// 
-			this.label10.Location = new System.Drawing.Point(326, 320);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(47, 23);
-			this.label10.TabIndex = 9;
-			this.label10.Text = "m^2=_$";
-			// 
 			// button1
 			// 
 			this.button1.Location = new System.Drawing.Point(3, 315);
@@ -149,6 +139,7 @@ namespace tapete
 			this.button1.TabIndex = 10;
 			this.button1.Text = "<";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// label11
 			// 
@@ -185,38 +176,29 @@ namespace tapete
 			this.button2.TabIndex = 14;
 			this.button2.Text = "Calcular";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.Button2Click);
 			// 
-			// label14
+			// label8
 			// 
-			this.label14.Location = new System.Drawing.Point(258, 197);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(35, 20);
-			this.label14.TabIndex = 15;
-			this.label14.Text = "/";
-			// 
-			// lbl_pre
-			// 
-			this.lbl_pre.Location = new System.Drawing.Point(265, 197);
-			this.lbl_pre.Name = "lbl_pre";
-			this.lbl_pre.Size = new System.Drawing.Size(53, 23);
-			this.lbl_pre.TabIndex = 16;
-			this.lbl_pre.Text = "___";
+			this.label8.Location = new System.Drawing.Point(255, 271);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(56, 23);
+			this.label8.TabIndex = 15;
+			this.label8.Text = "$";
 			// 
 			// Precio
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(376, 343);
-			this.Controls.Add(this.lbl_pre);
-			this.Controls.Add(this.label14);
+			this.Controls.Add(this.label8);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.label13);
 			this.Controls.Add(this.label12);
 			this.Controls.Add(this.label11);
 			this.Controls.Add(this.button1);
-			this.Controls.Add(this.label10);
 			this.Controls.Add(this.label9);
-			this.Controls.Add(this.label8);
+			this.Controls.Add(this.lbl_mat);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
@@ -228,16 +210,14 @@ namespace tapete
 			this.Text = "Precio";
 			this.ResumeLayout(false);
 		}
-		private System.Windows.Forms.Label lbl_pre;
-		private System.Windows.Forms.Label label14;
+		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Label lbl_mat;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label5;

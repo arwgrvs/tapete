@@ -57,6 +57,10 @@ namespace tapete
 			this.button2 = new System.Windows.Forms.Button();
 			this.label10 = new System.Windows.Forms.Label();
 			this.textBox9 = new System.Windows.Forms.TextBox();
+			this.label11 = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			this.label13 = new System.Windows.Forms.Label();
+			this.label14 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// textBox8
@@ -197,10 +201,11 @@ namespace tapete
 			this.button1.TabIndex = 18;
 			this.button1.Text = "<";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(253, 421);
+			this.button2.Location = new System.Drawing.Point(194, 426);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(63, 21);
 			this.button2.TabIndex = 36;
@@ -214,7 +219,7 @@ namespace tapete
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(130, 23);
 			this.label10.TabIndex = 37;
-			this.label10.Text = "Cantidad de Agua (Litros)";
+			this.label10.Text = "Precio de Agua (Litros)";
 			// 
 			// textBox9
 			// 
@@ -223,11 +228,47 @@ namespace tapete
 			this.textBox9.Size = new System.Drawing.Size(185, 20);
 			this.textBox9.TabIndex = 38;
 			// 
+			// label11
+			// 
+			this.label11.Location = new System.Drawing.Point(299, 426);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(100, 23);
+			this.label11.TabIndex = 39;
+			this.label11.Text = "________";
+			// 
+			// label12
+			// 
+			this.label12.Location = new System.Drawing.Point(365, 48);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(100, 23);
+			this.label12.TabIndex = 40;
+			this.label12.Text = "_______";
+			// 
+			// label13
+			// 
+			this.label13.Location = new System.Drawing.Point(333, 48);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(37, 23);
+			this.label13.TabIndex = 41;
+			this.label13.Text = "Área:";
+			// 
+			// label14
+			// 
+			this.label14.Location = new System.Drawing.Point(353, 426);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(55, 23);
+			this.label14.TabIndex = 42;
+			this.label14.Text = "$";
+			// 
 			// cantidad
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(452, 480);
+			this.Controls.Add(this.label14);
+			this.Controls.Add(this.label13);
+			this.Controls.Add(this.label12);
+			this.Controls.Add(this.label11);
 			this.Controls.Add(this.textBox9);
 			this.Controls.Add(this.label10);
 			this.Controls.Add(this.button2);
@@ -254,6 +295,10 @@ namespace tapete
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label label14;
+		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.Label label12;
+		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.TextBox textBox9;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Button button2;

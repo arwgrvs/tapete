@@ -29,43 +29,62 @@ namespace tapete
 			//
 		}
 		
-		
+		int cont=0;
 		
 		void Button3Click(object sender, EventArgs e)
 		{
-			int a = Int32.Parse(txt_cua.Text);
-			a = a*a;
-			string pass;
-			pass = a.ToString();
-			Precio Precio =new Precio(pass, "0");
-			Precio.Show();
+			//Contador para saber el tipo de figura
+			cont++;
+			if (cont==1)
+			{
+				//Calcular el area
+				int a = Int32.Parse(txt_cua.Text);
+				a = a*a;
+				string pass;
+				pass = a.ToString();
+				cantidad cantidad =new cantidad(pass);
+				cantidad.Show();
+			}
 		}
 		
 		void Button1Click(object sender, EventArgs e)
 		{
+			//Volver
 			this.Close();
 		}
 		
 		void Button2Click(object sender, EventArgs e)
 		{
-			double a = Int32.Parse(txt_cir.Text);
-			a = ((a/2)*(a/2))*3.1416;
-			string pass2;
-			pass2 = a.ToString();
-			Precio Precio =new Precio(pass2, "0");
-			Precio.Show();
+			//Contador para saber el tipo de figura
+			cont=2;
+			if(cont==2)
+			{
+				//Calcular el area
+				double a = Int32.Parse(txt_cir.Text);
+				a = ((a/2)*(a/2))*3.1416;
+				string pass;
+				pass = a.ToString();
+				cantidad cantidad =new cantidad(pass);
+				cantidad.Show();
+			}
 		}
 		
 		void Button4Click(object sender, EventArgs e)
 		{
-			int a = Int32.Parse(txt_la.Text);
-			int b = Int32.Parse(txt_bas.Text);
-			int c=0;
-			c = a*b;
-			string pass3;
-			pass3 = c.ToString();
-			Precio Precio =new Precio(pass3, "0");
-			Precio.Show();			
+			//Contador para saber el tipo de figura
+			cont=3;
+			if(cont==3)
+			{
+				//Calcular el area
+				int a = Int32.Parse(txt_la.Text);
+				int b = Int32.Parse(txt_bas.Text);
+				int c=0;
+				c = a*b;
+				string pass;
+				pass = c.ToString();
+				cantidad cantidad =new cantidad(pass);
+				cantidad.Show();
+			}
 		}
 	}
 }

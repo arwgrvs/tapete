@@ -32,19 +32,22 @@ namespace tapete
 		
 		void Button1Click(object sender, EventArgs e)
 		{
+			//Cambiar de Form
 			area area=new area();
 			area.Show();
 		}
 		
 		void Button2Click(object sender, EventArgs e)
 		{
-			cantidad cantidad=new cantidad();
+			//Cambiar de Form
+			cantidad cantidad=new cantidad("0");
 			cantidad.Show();			
 		}
 		
 		void Button3Click(object sender, EventArgs e)
 		{
-			Precio Precio= new Precio("c", "s");
+			//Cambiar de Form
+			Precio Precio= new Precio("c", "s", "d");
 			Precio.Show();			
 		}
 	}
