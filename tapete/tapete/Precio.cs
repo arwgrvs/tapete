@@ -34,13 +34,14 @@ namespace tapete
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-		
+		int sumita=0;
 		void Button2Click(object sender, EventArgs e)
 		{
 			//Hacer el calculo final
 			int a = Int32.Parse(lbl_mat.Text);	
 			int a2 = Int32.Parse(label7.Text);	
-			label9.Text=a+a2.ToString();
+			sumita=a+a2;
+			label9.Text=sumita.ToString();;
 		}
 		
 		void Button1Click(object sender, EventArgs e)
