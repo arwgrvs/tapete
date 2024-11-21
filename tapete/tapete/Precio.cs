@@ -17,14 +17,15 @@ namespace tapete
 	/// </summary>
 	public partial class Precio : Form
 	{
-		public Precio(string text)
+		public Precio(string area, string pre)
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			string a = text;
+			string a = area;
 			label6.Text=a;
+			lbl_pre.Text=pre;
 			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.

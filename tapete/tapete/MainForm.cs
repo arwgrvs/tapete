@@ -44,7 +44,7 @@ namespace tapete
 		
 		void Button3Click(object sender, EventArgs e)
 		{
-			Precio Precio= new Precio("c");
+			Precio Precio= new Precio("c", "s");
 			Precio.Show();			
 		}
 	}

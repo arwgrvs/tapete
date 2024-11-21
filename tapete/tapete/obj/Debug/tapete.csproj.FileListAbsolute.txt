@@ -8,3 +8,13 @@ C:\Users\CC2-PC20\Documents\SharpDevelop Projects\tapete\tapete\obj\Debug\tapete
 C:\Users\CC2-PC20\Documents\SharpDevelop Projects\tapete\tapete\obj\Debug\tapete.area.resources
 C:\Users\CC2-PC20\Documents\SharpDevelop Projects\tapete\tapete\obj\Debug\tapete.cantidad.resources
 C:\Users\CC2-PC20\Documents\SharpDevelop Projects\tapete\tapete\obj\Debug\tapete.Precio.resources
+C:\Users\CC2-PC20\tapete\tapete\tapete\bin\Debug\tapete.exe
+C:\Users\CC2-PC20\tapete\tapete\tapete\bin\Debug\tapete.pdb
+C:\Users\CC2-PC20\tapete\tapete\tapete\obj\Debug\tapete.csprojResolveAssemblyReference.cache
+C:\Users\CC2-PC20\tapete\tapete\tapete\obj\Debug\tapete.area.resources
+C:\Users\CC2-PC20\tapete\tapete\tapete\obj\Debug\tapete.cantidad.resources
+C:\Users\CC2-PC20\tapete\tapete\tapete\obj\Debug\tapete.MainForm.resources
+C:\Users\CC2-PC20\tapete\tapete\tapete\obj\Debug\tapete.Precio.resources
+C:\Users\CC2-PC20\tapete\tapete\tapete\obj\Debug\tapete.csproj.GenerateResource.Cache
+C:\Users\CC2-PC20\tapete\tapete\tapete\obj\Debug\tapete.exe
+C:\Users\CC2-PC20\tapete\tapete\tapete\obj\Debug\tapete.pdb

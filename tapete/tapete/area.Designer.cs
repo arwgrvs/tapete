@@ -45,14 +45,13 @@ namespace tapete
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.txt_cua = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.txt_cir = new System.Windows.Forms.TextBox();
+			this.txt_la = new System.Windows.Forms.TextBox();
+			this.txt_bas = new System.Windows.Forms.TextBox();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
 			this.label8 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -63,6 +62,7 @@ namespace tapete
 			this.button1.TabIndex = 0;
 			this.button1.Text = "<";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// label1
 			// 
@@ -71,7 +71,7 @@ namespace tapete
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(113, 27);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "Cantidades";
+			this.label1.Text = "Área";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// label2
@@ -131,26 +131,26 @@ namespace tapete
 			this.txt_cua.Size = new System.Drawing.Size(185, 20);
 			this.txt_cua.TabIndex = 10;
 			// 
-			// textBox3
+			// txt_cir
 			// 
-			this.textBox3.Location = new System.Drawing.Point(183, 189);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(185, 20);
-			this.textBox3.TabIndex = 12;
+			this.txt_cir.Location = new System.Drawing.Point(183, 189);
+			this.txt_cir.Name = "txt_cir";
+			this.txt_cir.Size = new System.Drawing.Size(185, 20);
+			this.txt_cir.TabIndex = 12;
 			// 
-			// textBox5
+			// txt_la
 			// 
-			this.textBox5.Location = new System.Drawing.Point(183, 307);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(185, 20);
-			this.textBox5.TabIndex = 14;
+			this.txt_la.Location = new System.Drawing.Point(183, 307);
+			this.txt_la.Name = "txt_la";
+			this.txt_la.Size = new System.Drawing.Size(185, 20);
+			this.txt_la.TabIndex = 14;
 			// 
-			// textBox6
+			// txt_bas
 			// 
-			this.textBox6.Location = new System.Drawing.Point(183, 345);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(185, 20);
-			this.textBox6.TabIndex = 15;
+			this.txt_bas.Location = new System.Drawing.Point(183, 345);
+			this.txt_bas.Name = "txt_bas";
+			this.txt_bas.Size = new System.Drawing.Size(185, 20);
+			this.txt_bas.TabIndex = 15;
 			// 
 			// button2
 			// 
@@ -160,6 +160,7 @@ namespace tapete
 			this.button2.TabIndex = 16;
 			this.button2.Text = "Confirmar";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.Button2Click);
 			// 
 			// button3
 			// 
@@ -179,6 +180,7 @@ namespace tapete
 			this.button4.TabIndex = 18;
 			this.button4.Text = "Confirmar";
 			this.button4.UseVisualStyleBackColor = true;
+			this.button4.Click += new System.EventHandler(this.Button4Click);
 			// 
 			// label8
 			// 
@@ -189,27 +191,18 @@ namespace tapete
 			this.label8.TabIndex = 19;
 			this.label8.Text = "Cuadrado";
 			// 
-			// label9
-			// 
-			this.label9.Location = new System.Drawing.Point(336, 28);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(100, 23);
-			this.label9.TabIndex = 20;
-			this.label9.Text = "label9";
-			// 
 			// area
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(459, 437);
-			this.Controls.Add(this.label9);
 			this.Controls.Add(this.label8);
 			this.Controls.Add(this.button4);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.button2);
-			this.Controls.Add(this.textBox6);
-			this.Controls.Add(this.textBox5);
-			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.txt_bas);
+			this.Controls.Add(this.txt_la);
+			this.Controls.Add(this.txt_cir);
 			this.Controls.Add(this.txt_cua);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
@@ -224,14 +217,13 @@ namespace tapete
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
-		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox txt_bas;
+		private System.Windows.Forms.TextBox txt_la;
+		private System.Windows.Forms.TextBox txt_cir;
 		private System.Windows.Forms.TextBox txt_cua;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label6;

@@ -28,5 +28,13 @@ namespace tapete
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void Button2Click(object sender, EventArgs e)
+		{
+			int a = Int32.Parse(txt_asr.Text);
+			string pass=a.ToString();
+			Precio Precio=new Precio("0", pass);
+			Precio.Show();
+		}
 	}
 }

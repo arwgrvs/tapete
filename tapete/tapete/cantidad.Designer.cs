@@ -43,7 +43,7 @@ namespace tapete
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txt_asr = new System.Windows.Forms.TextBox();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
@@ -108,12 +108,12 @@ namespace tapete
 			this.textBox2.Size = new System.Drawing.Size(185, 20);
 			this.textBox2.TabIndex = 29;
 			// 
-			// textBox1
+			// txt_asr
 			// 
-			this.textBox1.Location = new System.Drawing.Point(194, 82);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(185, 20);
-			this.textBox1.TabIndex = 28;
+			this.txt_asr.Location = new System.Drawing.Point(194, 82);
+			this.txt_asr.Name = "txt_asr";
+			this.txt_asr.Size = new System.Drawing.Size(185, 20);
+			this.txt_asr.TabIndex = 28;
 			// 
 			// label9
 			// 
@@ -206,6 +206,7 @@ namespace tapete
 			this.button2.TabIndex = 36;
 			this.button2.Text = "Añadir";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.Button2Click);
 			// 
 			// label10
 			// 
@@ -237,7 +238,7 @@ namespace tapete
 			this.Controls.Add(this.textBox4);
 			this.Controls.Add(this.textBox3);
 			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txt_asr);
 			this.Controls.Add(this.label9);
 			this.Controls.Add(this.label8);
 			this.Controls.Add(this.label7);
@@ -266,7 +267,7 @@ namespace tapete
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txt_asr;
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.TextBox textBox4;
